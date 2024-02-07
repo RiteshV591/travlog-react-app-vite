@@ -11,7 +11,7 @@ export const Hero = () => {
           </button>
           <h1 className="text-5xl font-semibold leading-tight sm:text-6xl md:text-7xl 2xl:text-8xl 2xl:mt-4 2xl:leading-[1.1] ">
             Travel
-            <span className="text-pink-400">top destination</span>
+            <span className="text-pink-400">{` top destination `}</span>
             of the world
           </h1>
           <p className="text-slate-600 text-sm my-7 sm:w-96 2xl:w-3/4 sm:text-base md:text-lg ">
@@ -35,37 +35,6 @@ export const Hero = () => {
 
         {/* header Image section */}
         <div className="flex items-center justify-center p-6 mt-6 h-auto lg:mt-0 lg:h-[500px] lg:w-[600px] lg:p-0 xl:h-[550px]">
-          {/* <a
-            href="#"
-            className="absolute flex bg-white py-3 px-6 rounded-full shadow-xl active:shadow-lg text-sm bottom-40 ml-6"
-            ><img
-              className="pr-2"
-              src="../resources/location.svg"
-              alt="location-logo"
-            />Top Places</a
-          >
-          <a
-            href="#"
-            className="absolute flex bg-white py-3 px-6 rounded-full shadow-xl active:shadow-lg text-sm bottom-24 right-56"
-            ><img
-              className="pr-2"
-              src="../resources/location.svg"
-              alt="location-logo"
-            />Top Hotels</a
-          >
-          <a
-            href="#"
-            className="absolute flex flex-col bg-white py-3 px-6 text-xs rounded-lg shadow-xl active:shadow-lg right-36 bottom-80"
-            ><div className="flex">
-              <img
-                className="pr-2"
-                src="../resources/network.svg"
-                alt="location-logo"
-              />
-              <span className="text-indigo-600 font-bold text-xl">5000+</span>
-            </div>
-            Customers</a
-          > */}
           <img
             className="w-auto sm:w-[500px] md:w-[600px] lg:max-w-none lg:w-[520px] xl:w-[600px] 2xl:h-[650px] 2xl:w-auto 2xl:mt-16 lg:h-[650px]"
             src="../resources/hero.svg"

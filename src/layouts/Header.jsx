@@ -1,6 +1,9 @@
+import { useState } from "react";
 import logo from "../assets/resources/logo.svg";
 
 export const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <header>
       <nav id="navbar" className="bg-white border-gray-200 ">
@@ -18,6 +21,7 @@ export const Header = () => {
               dark_mode
             </span>
             <button
+              onClick={() => setIsOpen(!isOpen)}
               id="btn-nav-toggle"
               type="button"
               className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
@@ -32,7 +36,11 @@ export const Header = () => {
 
           {/* Links list */}
           <div
-            className="hidden w-full lg:w-auto lg:flex text-slate-700"
+            className={
+              isOpen
+                ? "w-full lg:w-auto lg:flex text-slate-700"
+                : "hidden w-full lg:w-auto lg:flex text-slate-700"
+            }
             id="navbar-default"
           >
             <ul className="font-medium flex rounded-2xl flex-col p-4 lg:p-0 mt-4 border border-gray-300 bg-gray-50 lg:flex-row lg:text-base lg:space-x-4 xl:text-lg xl:space-x-7 2xl:space-x-8 rtl:space-x-reverse lg:mt-0 lg:border-0 lg:bg-white ">
