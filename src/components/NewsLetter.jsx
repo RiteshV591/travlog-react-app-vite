@@ -1,4 +1,8 @@
+import { useState } from "react";
+
 export const NewsLetter = () => {
+  const [email, setEmail] = useState("");
+
   return (
     <section id="news-letter-section">
       <div className="container mx-auto my-20 p-4">
@@ -20,8 +24,10 @@ export const NewsLetter = () => {
               <input
                 className="w-full md:w-auto focus:outline-none font-medium text-base"
                 type="text"
-                value=""
                 placeholder="Enter your email address"
+                value={email}
+                onClick={(e) => e.preventDefault()}
+                onChange={(e) => setEmail(e.target.value)}
               />
               <button className="p-3 rounded-xl bg-indigo-600">
                 <img src="../resources/newsLetter/send.svg" alt="send" />

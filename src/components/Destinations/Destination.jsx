@@ -1,58 +1,14 @@
 import React from "react";
 import Slider from "react-slick";
 import { SingleCard } from "./SingleCard";
+import destinationsData from "./destinationsData.json";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const destinations = [
-  {
-    id: 1,
-    image: "../resources/destinations/destination1.jpg",
-    destination: "Barcelona",
-    location: "Catalonia, Spain",
-    price: 380,
-  },
-  {
-    id: 2,
-    image: "../resources/destinations/destination2.jpg",
-    destination: "Opera House",
-    location: "Sydney, Austrailia",
-    price: 300,
-  },
-  {
-    id: 3,
-    image: "../resources/destinations/destination3.jpg",
-    destination: "Lion's Head",
-    location: "Kapstadt, South Africa",
-    price: 420,
-  },
-  {
-    id: 4,
-    image: "../resources/destinations/destination4.jpg",
-    destination: "L'Arc de Triomphe",
-    location: "Paris, France",
-    price: 350,
-  },
-  {
-    id: 5,
-    image: "../resources/destinations/destination5.jpg",
-    destination: "Sunset Temple",
-    location: "Bali, Indonesia",
-    price: 290,
-  },
-  {
-    id: 6,
-    image: "../resources/destinations/destination6.jpg",
-    destination: "Trevi Fountain",
-    location: "Roma, Italy",
-    price: 490,
-  },
-];
-
 export const Destination = () => {
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 600,
     slidesToShow: 3,
@@ -65,7 +21,7 @@ export const Destination = () => {
           slidesToShow: 2,
           slidesToScroll: 2,
           infinite: true,
-          dots: true,
+          dots: false,
         },
       },
       {
@@ -127,8 +83,8 @@ export const Destination = () => {
 
         <div className="destination-cards grid grid-cols-1 gap-8 lg:gap-12 lg:mx-auto">
           <Slider ref={slider} {...settings}>
-            {destinations.map((item, index) => (
-              <SingleCard item={item} key={index} />
+            {destinationsData.map((item) => (
+              <SingleCard item={item} key={item.id} />
             ))}
           </Slider>
         </div>

@@ -1,8 +1,8 @@
 export const SingleCard = ({ item }) => {
-  const { id, image, destination, location, price } = item;
+  const { image, destination, location, price } = item;
 
   return (
-    <div className="destination-card-body" key={id}>
+    <div className="destination-card-body">
       <img
         className="rounded-3xl drop-shadow-xl w-full"
         src={image}

@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "image": "../resources/destinations/destination1.jpg",
+    "destination": "Barcelona",
+    "location": "Catalonia, Spain",
+    "price": 380
+  },
+  {
+    "id": 2,
+    "image": "../resources/destinations/destination2.jpg",
+    "destination": "Opera House",
+    "location": "Sydney, Austrailia",
+    "price": 300
+  },
+  {
+    "id": 3,
+    "image": "../resources/destinations/destination3.jpg",
+    "destination": "Lion's Head",
+    "location": "Kapstadt, South Africa",
+    "price": 420
+  },
+  {
+    "id": 4,
+    "image": "../resources/destinations/destination4.jpg",
+    "destination": "L'Arc de Triomphe",
+    "location": "Paris, France",
+    "price": 350
+  },
+  {
+    "id": 5,
+    "image": "../resources/destinations/destination5.jpg",
+    "destination": "Sunset Temple",
+    "location": "Bali, Indonesia",
+    "price": 290
+  },
+  {
+    "id": 6,
+    "image": "../resources/destinations/destination6.jpg",
+    "destination": "Trevi Fountain",
+    "location": "Roma, Italy",
+    "price": 490
+  }
+]
